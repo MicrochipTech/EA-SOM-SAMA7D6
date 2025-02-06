@@ -30,3 +30,14 @@ Work Around: Solder the System-On-Module on the mother board manually.
 * Tools
   * [SAM-BA Programming Tool](https://github.com/atmelcorp/sam-ba/releases/tag/v3.9)
   
+
+## Caution: NAND flash access errors
+Read/Write errors can be observed during NAND flash accesses. 
+
+Workaround:
+Configure each pin of the NAND flash data bus in Drive Strength “Type A” mode, as described in the following pseudo-code:
+* PIO_MSKR0 = 0x000007F8 (selecting pins D0 to D7, that is PA3 to PA10)
+* Temp = PIO_CFGR0
+* Temp &= 0x00020000
+* Temp |= 0x00010000
+* PIO_CFGR0 = Temp (writing DRVSTR=0b01 for all selected pins)
