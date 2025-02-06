@@ -15,11 +15,6 @@ For more information about the SAMA7D65 CPU, or the associated SIPs referenced a
 <p align="center"><img src="SAMA7D65-SOM.jpg" /></p>
 
 
-## Assembly Limitations
-It is not recommended to use industrial automated reflow process with oven to solder the product on the mother board, as the process might impact the System-On-Module reliability.
-
-Work Around: Solder the System-On-Module on the mother board manually.
-
 ## Collaterals
 * Hardware
   * SOM Hardware Design Files can be requested by contacting your local [Microchip Sales or Sales representative](https://www.microchip.com/en-us/about/global-sales-and-distribution)
@@ -30,6 +25,11 @@ Work Around: Solder the System-On-Module on the mother board manually.
 * Tools
   * [SAM-BA Programming Tool](https://github.com/atmelcorp/sam-ba/releases/tag/v3.9)
   
+## Assembly Limitations
+It is not recommended to use industrial automated reflow process with oven to solder the product on the mother board, as the process might impact the System-On-Module reliability.
+
+Work Around: Solder the System-On-Module on the mother board manually.
+
 
 ## Caution: NAND flash access errors
 Read/Write errors can be observed during NAND flash accesses. 
