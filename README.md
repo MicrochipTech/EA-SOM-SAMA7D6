@@ -22,22 +22,17 @@ For more information about the SAMA7D65 CPU, or the associated SIPs referenced a
   * [SAMA7D65 SOM Series Preliminary Data Sheet](Documentation/)
   * [System-On-Module (SOM) Assembly and Storage Guidelines](https://ww1.microchip.com/downloads/aemDocuments/documents/MPU32/ApplicationNotes/ApplicationNotes/System-On-Module-SOM-Assembly-and-Storage-Guidelines-DS00005249.pdf)
   * [System-On-Module (SOM) Pick and Place Guidelines](https://ww1.microchip.com/downloads/aemDocuments/documents/MPU32/ApplicationNotes/ApplicationNotes/System-On-Module-SOM-Pick-and-Place-Guidelines-ds00004878.pdf)
+* Software
+  * [Linux Solution](http://www.linux4sam.org/)
+  * [MPLAB Harmony v3 Solution](https://www.microchip.com/en-us/tools-resources/configure/mplab-harmony)
+  * [MPLAB Discover Code examples](https://mplab-discover.microchip.com/v2/category/com.microchip.code.examples?dsl=sama7d65)
 * Tools
   * [SAM-BA Programming Tool](https://github.com/atmelcorp/sam-ba/releases/tag/v3.9)
-  
-## Assembly Limitations
-It is not recommended to use industrial automated reflow process with oven to solder the product on the mother board, as the process might impact the System-On-Module reliability.
+  * [MPLAB X Integrated Development Environment](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide)
 
-Work Around: Solder the System-On-Module on the mother board manually.
+##Hardware and Software recommendations:
+* Hardware
+  * Since the assembly recipe is not yet fully qualified, we recommend, for the moment, to solder the System-On-Module on the mother board manually.
+* Software
+  * NAND-Flash: Configure each pin of the NAND flash data bus in Drive Strength “Type A” mode.
 
-
-## Caution: NAND flash access errors
-Read/Write errors can be observed during NAND flash accesses. 
-
-Workaround:
-Configure each pin of the NAND flash data bus in Drive Strength “Type A” mode, as described in the following pseudo-code:
-* PIO_MSKR0 = 0x000007F8 (selecting pins D0 to D7, that is PA3 to PA10)
-* Temp = PIO_CFGR0
-* Temp &= ~0x00020000
-* Temp |= 0x00010000
-* PIO_CFGR0 = Temp (writing DRVSTR=0b01 for all selected pins)
