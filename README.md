@@ -30,7 +30,7 @@ For more information about the SAMA7D65 CPU, or the associated SIPs referenced a
   * [SAM-BA Programming Tool](https://github.com/atmelcorp/sam-ba/releases/tag/v3.9)
   * [MPLAB X Integrated Development Environment](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide)
 
-##Hardware and Software recommendations:
+## Hardware and Software recommendations:
 * Hardware
   * Since the assembly recipe is not yet fully qualified, we recommend, for the moment, to solder the System-On-Module on the mother board manually.
 * Software
