@@ -10,6 +10,7 @@ This new SOM series is targeted for production very soon, but in the meantime th
 
 For more information about the SAMA7D65 CPU, or the associated SIPs referenced above, please visit the respective product page on Microchip.com.
 * https://www.microchip.com/en-us/product/SAMA7D65
+* https://www.microchip.com/en-us/product/SAMA7D65D2G
 
 
 <p align="center"><img src="SAMA7D65-SOM.jpg" /></p>
