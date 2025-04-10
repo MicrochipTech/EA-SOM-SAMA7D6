@@ -8,15 +8,13 @@ The SAMA7D65 SOM Series also limits the design rules of the main application boa
 
 This new SOM series is targeted for production very soon, but in the meantime this Github repository serves as the main resource for documentation and software support for the SAMA7D65 SOM series.  Samples are available today, please contact your local Microchip sales office. 
 
-For more information about the SAMA7D65 CPU, or the associated SIPs referenced above, please visit the respective product page on Microchip.com.
-* https://www.microchip.com/en-us/product/SAMA7D65
-* https://www.microchip.com/en-us/product/SAMA7D65D2G
-
-
 <p align="center"><img src="SAMA7D65-SOM.jpg" /></p>
 
+## SAMA7D65 SOM Series
+* SAMA7D65D2GN8: Early Adopter (EA)
+* SAMA7D65D1GN2: Coming soon
 
-## Collaterals
+## SAMA7D65 SOM Collaterals
 * Hardware
   * SOM Hardware Design Files can be requested by contacting your local [Microchip Sales or Sales representative](https://www.microchip.com/en-us/about/global-sales-and-distribution)
 * Documentation
